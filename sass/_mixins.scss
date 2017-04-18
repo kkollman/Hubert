@@ -1,0 +1,12 @@
+@mixin afterBar($height) {
+  position: relative;
+  &::after {
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: $height;
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+  }
+}

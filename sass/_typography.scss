@@ -1,14 +1,48 @@
+$font-sans: 'Roboto', sans-serif;
+$font-serif: 'Abhaya Libre', sans-serif;
+
+
+
+* {
+  font-size: 15px;
+}
+
 body {
-  font-family: 'Abhaya Libre', sans-serif;
+  font-family: $font-sans;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  font-size: 1em;
 }
 
+.header-heading {
+  font-size: 4rem;
+  font-weight: 800;
+  a{
+    @include afterBar(0.25em);
+  }
+}
+
+.header-motto {
+  font-family: $font-sans;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
 .main__post p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-family: $font-sans;
   line-height: 1.7em;
+}
+
+.main__post-title {
+  font-family: $font-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  a {
+    @include afterBar(1px);
+    
+  }
 }

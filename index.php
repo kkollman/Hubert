@@ -6,7 +6,7 @@ get_header();
     while (have_posts()) : the_post(); ?>
     <article class="main__post">
       <div class="main__post-content">
-        <h2>
+        <h2 class="main__post-title">
           <a href="<?php the_permalink(); ?>">
             <?php the_title(); ?>
           </a>
