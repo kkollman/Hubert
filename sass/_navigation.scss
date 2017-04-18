@@ -1,0 +1,28 @@
+$menuMargin: 50px;
+
+
+
+.nav__menu {
+  background-color: $accent1;
+  padding: 5px;
+  ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      display: flex;
+      &:not(first-of-type){
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+.nav__header {
+  margin-bottom: $menuMargin;
+}
+
+.nav__footer {
+  margin-top: $menuMargin;
+}
