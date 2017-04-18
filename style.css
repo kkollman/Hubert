@@ -11,29 +11,37 @@ a {
   text-decoration: none;
   color: inherit; }
 
-p {
+.main__post p {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
-  line-height: 1.48em; }
+  line-height: 1.7em; }
 
-/* Main layout rules */
 div.container {
+  width: 66.67%;
   max-width: 1200px;
   margin: 0 auto;
   column-count: 2;
   -webkit-column-count: 2;
-  column-gap: 10px;
-  -webkit-column-gap: 5; }
+  column-gap: 3px;
+  -webkit-column-gap: 3px;
+  -webkit-column-rule: 3px solid black;
+  -moz-column-rule: 3px solid black;
+  column-rule: 3px solid black; }
 
-.main__post-tile {
-  margin-bottom: 10px;
+.main__post {
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid;
   padding: 5px;
-  background-color: #c5c4c7; }
+  border-bottom: 3px solid black; }
+  .main__post:last-of-type {
+    border-bottom: none; }
 
 .main__post-content {
   padding: 10px; }
+
+/* Main layout rules */
+* {
+  box-sizing: border-box; }
 
 /*# sourceMappingURL=style.css.map */

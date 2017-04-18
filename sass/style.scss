@@ -6,25 +6,10 @@ Version: 1.0
 */
 @import "colors";
 @import "typography";
+@import "borders";
+@import "main";
+@import "post";
 /* Main layout rules */
-div.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    column-count: 2;
-    -webkit-column-count: 2;
-    column-gap: 10px;
-    -webkit-column-gap: 5;
-}
-
-.main__post-tile {
-    margin-bottom: 10px;
-    -webkit-column-break-inside: avoid;
-    page-break-inside: avoid;
-    break-inside: avoid;
-    padding: 5px;
-    background-color: rgb(197, 196, 199);
-}
-
-.main__post-content {
-    padding: 10px;
+* {
+  box-sizing: border-box;
 }

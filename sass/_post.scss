@@ -1,0 +1,16 @@
+
+.main__post {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    padding: 5px;
+    // background-color: rgb(235, 235, 235);
+    border-bottom: $mainBorder;
+    &:last-of-type {
+      border-bottom: none;
+    }
+}
+
+.main__post-content {
+    padding: 10px;
+}

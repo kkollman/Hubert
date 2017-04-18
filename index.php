@@ -4,7 +4,7 @@ get_header();
 
   if (have_posts()) :
     while (have_posts()) : the_post(); ?>
-    <div class="main__post-tile">
+    <article class="main__post">
       <div class="main__post-content">
         <h2>
           <a href="<?php the_permalink(); ?>">
@@ -13,7 +13,7 @@ get_header();
         </h2>
           <?php the_content(); ?>
       </div>
-    </div>
+    </article>
 
   <?php endwhile;
 
