@@ -71,12 +71,22 @@ a {
       display: flex; }
       .nav__menu ul li:not(first-of-type) {
         margin-left: 15px; }
+      .nav__menu ul li.current-menu-item {
+        color: #ffffff;
+        background-color: #000000; }
 
 .nav__header {
   margin-bottom: 50px; }
 
 .nav__footer {
   margin-top: 50px; }
+
+.menu-item, .page_item {
+  padding: 5px;
+  transition: 0.3s; }
+  .menu-item:hover, .page_item:hover {
+    color: #ffffff;
+    background-color: #000000; }
 
 body {
   background-color: #f2f1ef; }

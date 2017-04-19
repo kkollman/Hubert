@@ -15,6 +15,10 @@ $menuMargin: 50px;
       &:not(first-of-type){
         margin-left: 15px;
       }
+      &.current-menu-item {
+        color: $white;
+        background-color: $black;
+      }
     }
   }
 }
@@ -25,4 +29,13 @@ $menuMargin: 50px;
 
 .nav__footer {
   margin-top: $menuMargin;
+}
+
+.menu-item, .page_item {
+  padding: 5px;
+  transition: 0.3s;
+  &:hover {
+    color: $white;
+    background-color: $black;
+  }
 }
