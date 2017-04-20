@@ -94,7 +94,9 @@ body {
 div.container {
   width: 66.67%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto; }
+
+div.main {
   column-count: 2;
   -webkit-column-count: 2;
   column-gap: 3px;
@@ -114,6 +116,37 @@ div.container {
 
 .main__post-content {
   padding: 10px; }
+
+.error-404 {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 560px;
+  position: relative; }
+  .error-404::before {
+    width: 5px;
+    content: "";
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    left: -1rem;
+    top: 0; }
+
+.error__error-code {
+  padding-left: 1rem;
+  font-size: 5rem;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  background-color: #000000;
+  transform-origin: left;
+  transform: translate(-1rem); }
+
+.error__error-text {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem; }
 
 /* Main layout rules */
 * {
