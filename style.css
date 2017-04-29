@@ -4,6 +4,13 @@ Author: Kamil Kollman
 Author URI: http://github.com/kkollman
 Version: 1.0
 */
+/* Main layout rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/*Import partials*/
 * {
   font-size: 15px; }
 
@@ -147,9 +154,5 @@ div.main {
 .error__error-text {
   font-family: "Roboto", sans-serif;
   margin-bottom: 1rem; }
-
-/* Main layout rules */
-* {
-  box-sizing: border-box; }
 
 /*# sourceMappingURL=style.css.map */

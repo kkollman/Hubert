@@ -4,6 +4,15 @@ Author: Kamil Kollman
 Author URI: http://github.com/kkollman
 Version: 1.0
 */
+/* Main layout rules */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*Import partials*/
 @import "mixins";
 @import "colors";
 @import "typography";
@@ -14,7 +23,3 @@ Version: 1.0
 @import "post";
 @import "page";
 @import "404";
-/* Main layout rules */
-* {
-  box-sizing: border-box;
-}
