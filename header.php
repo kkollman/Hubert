@@ -12,7 +12,7 @@
   <body <?php body_class(); ?>>
 
     <!-- site header -->
-    <header class="header container-fluid">
+    <header class="header container">
       <div class="row">
         <div class="col-sm-12">
           <!-- header first row -->

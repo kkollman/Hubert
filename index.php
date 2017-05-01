@@ -8,8 +8,9 @@ get_header();
     if (have_posts()) :
       while (have_posts()) : the_post(); ?>
       <article class="main__post">
+        <?php the_post_thumbnail('small-thumbnail'); ?>
         <div class=main__post-category>
-          <?php the_category() ?>
+          <?php the_category(); ?>
         </div>
         <h2 class="main__post-title">
           <a href="<?php the_permalink(); ?>">
@@ -24,7 +25,7 @@ get_header();
     <?php endwhile;
 
     else :
-      echo "<p>No posts have been found to display</p>";
+      echo "<p class\"error page__error\">No posts have been found to display</p>";
 
     endif;
     ?>

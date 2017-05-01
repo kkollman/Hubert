@@ -1,26 +1,36 @@
 <?php
 
 get_header();
+?>
 
-  if (have_posts()) :
-    while (have_posts()) : the_post(); ?>
-    <article class="page__post">
-      <h2 class="page__post-title">
-        <a href="<?php the_permalink(); ?>">
-          <?php the_title(); ?>
-        </a>
-      </h2>
-      <div class="page__post-content">
-          <?php the_content(); ?>
-      </div>
-    </article>
+<div class="main">
+  <?php
+    if (have_posts()) :
+      while (have_posts()) : the_post(); ?>
+      <article class="main__post">
+          <?php the_post_thumbnail('page-banner'); ?>
+        <div class=main__post-category>
+          <?php the_category() ?>
+        </div>
+        <h2 class="main__post-title">
+          <a href="<?php the_permalink(); ?>">
+            <?php the_title(); ?>
+          </a>
+        </h2>
+        <div class="main__post-content">
+            <?php the_excerpt(); ?>
+        </div>
+      </article>
 
-  <?php endwhile;
+    <?php endwhile;
 
-  else :
-    echo "<p>Post does not exist any more, or can't be read at the moment.</p>";
+    else :
+      echo "<p class\"error page__error\">Post doesn't exist or was removed</p>";
 
-  endif;
+    endif;
+    ?>
+</div>
 
+<?php
   get_footer();
  ?>

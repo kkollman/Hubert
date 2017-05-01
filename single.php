@@ -5,6 +5,7 @@ get_header();
   if (have_posts()) :
     while (have_posts()) : the_post(); ?>
     <article class="page__post">
+      <?php the_post_thumbnail('page-banner'); ?>
       <h2 class="page__post-title">
         <a href="<?php the_permalink(); ?>">
           <?php the_title(); ?>

@@ -64,6 +64,11 @@ a {
   font-size: 1.4rem; }
 
 /*font family, font size, color, weight, transform and decoration*/
+img {
+  max-width: 100%;
+  height: auto; }
+
+/*general styles for images*/
 /*predefined borders*/
 .header__heading {
   color: #000000; }
@@ -141,6 +146,8 @@ body {
 /*styles for main section of the page, containing blog excertps and thumbnails*/
 .main__post {
   padding-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid;
@@ -151,15 +158,10 @@ body {
     border-bottom: none; }
 
 .main__post-category {
-  margin-left: 25px;
   margin-bottom: 6.25px; }
 
 .main__post-title {
-  margin-left: 25px;
   margin-top: 0; }
-
-.main__post-content {
-  margin: 25px 25px; }
 
 /*styles for post excerpts, thumbnails, and single post pages*/
 /*styles for single page*/
