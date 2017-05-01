@@ -6,6 +6,9 @@ Version: 1.0
 */
 /* Main layout rules */
 
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,13 +16,13 @@ Version: 1.0
 }
 
 /*Import partials*/
-@import "mixins";
-@import "colors";
-@import "typography";
-@import "borders";
-@import "header";
-@import "navigation";
-@import "main";
-@import "post";
-@import "page";
-@import "404";
+@import "mixins"; /*predefined effects*/
+@import "colors"; /*color palettes*/
+@import "typography"; /*font family, font size, color, weight, transform and decoration*/
+@import "borders"; /*predefined borders*/
+@import "header"; /*styles for header section*/
+@import "navigation"; /*styles for menu navigation*/
+@import "main"; /*styles for main section of the page, containing blog excertps and thumbnails*/
+@import "post"; /*styles for post excerpts, thumbnails, and single post pages*/
+@import "page"; /*styles for single page*/
+@import "404"; /*styles for 404 page*/

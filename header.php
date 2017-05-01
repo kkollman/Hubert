@@ -12,25 +12,49 @@
   <body <?php body_class(); ?>>
 
     <!-- site header -->
-    <header class="header">
-      <h1 class="header__heading">
-        <a href="<?php echo home_url(); ?>">
-          <?php bloginfo('name'); ?>
-        </a>
-      </h1>
-      <h5 class="header__motto">
-        <?php bloginfo('description'); ?>
-      </h5>
-      <nav class="nav nav__menu nav__header">
-        <?php
+    <header class="header container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <!-- header first row -->
+          <div class="row header__row header__row--first">
+            <div class="col-md-6">
+              <h1 class="header__heading">
+                <a href="<?php echo home_url(); ?>">
+                  <?php bloginfo('name'); ?>
+                </a>
+              </h1>
+            </div>
+          </div>
+          <!-- end of first row -->
 
-        $menu_elements = array(
-          'theme_location' => 'primary',
-        );
+        </div>
+      </div>
+      <!-- site navigation -->
+      <div class="row">
+        <div class="col-sm-12">
+          <nav class="nav nav__menu nav__header">
+            <!-- display blog info -->
+            <div class="col-md-6 header__motto">
+              <h5>
+                <?php bloginfo('description'); ?>
+              </h5>
+            </div>
+            <!-- end of blog info -->
+            <!-- display blog menu -->
+            <div class="col-md-6">
+              <?php
+              $menu_elements = array(
+                'theme_location' => 'primary',
+              );
+              wp_nav_menu($menu_elements);
+              ?>
+            </div>
+            <!-- end of blog menu -->
+          </nav>
+        </div>
+      </div>
 
-        wp_nav_menu($menu_elements);
-        ?>
-      </nav>
+      <!-- end of navigation -->
     </header>
     <!-- site header end -->
 

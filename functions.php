@@ -15,5 +15,11 @@ register_nav_menus(array(
 ));
 
 
+// Change excerpt length
+function new_excerpt_length($length) {
+return 75;
+}
+add_filter('excerpt_length', 'new_excerpt_length');
+
 
  ?>

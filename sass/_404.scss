@@ -10,7 +10,7 @@
     width: 5px;
     content: "";
     height: 100%;
-    background-color: $black;
+    background-color: $dark;
     position: absolute;
     left: -1rem;
     top: 0;
@@ -22,8 +22,8 @@
   font-size: 5rem;
   font-family: $font-title;
   margin-bottom: 1rem;
-  color: $white;
-  background-color: $black;
+  color: $light;
+  background-color: $dark;
   transform-origin: left;
   transform: translate(-1rem);
 }

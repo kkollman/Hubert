@@ -10,14 +10,15 @@ $menuMargin: 50px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
     li {
       display: flex;
-      &:not(first-of-type){
+      &:not(:first-child){
         margin-left: 15px;
       }
       &.current-menu-item {
-        color: $white;
-        background-color: $black;
+        color: $light;
+        background-color: $dark;
       }
     }
   }
@@ -35,7 +36,22 @@ $menuMargin: 50px;
   padding: 5px;
   transition: 0.3s;
   &:hover {
-    color: $white;
-    background-color: $black;
+    color: $light;
+    background-color: $dark;
   }
 }
+
+.menu {
+  @media (min-width: 992px) {
+    float: right;
+  }
+}
+
+
+.menu-item a {
+    color: inherit;
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+  }

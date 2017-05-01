@@ -15,19 +15,21 @@ a {
   text-decoration: none;
   color: inherit;
   font-size: 1em;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .header__heading {
   font-size: 4rem;
   font-weight: 800;
-  a{
-    @include afterBar(0.25em);
-  }
 }
 
 .header__motto {
-  font-family: $font-text;
-  font-weight: 900;
+  h5{
+    font-family: $font-text;
+    font-weight: 900;
+  }
 }
 
 
@@ -36,14 +38,29 @@ a {
   line-height: 1.7em;
 }
 
+.main__post-category {
+  li {
+    display: inline;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: $font-text;
+    font-size: 1rem;
+    color: $faded;
+    &:not(:first-child)::before {
+      content: "|";
+      font-size: 1.2em;
+      display: inline;
+      margin: 0 5px;
+    }
+  }
+}
+
+
 .main__post-title {
   font-family: $font-title;
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: 2rem;
-  a {
-    @include afterBar(1px);
-  }
+  font-weight: 500;
+  font-size: 3rem;
 }
 
 .nav__menu {

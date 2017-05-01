@@ -1,0 +1,13 @@
+.header__heading{
+  color: $dark;
+  :hover {
+    color: inherit;
+  }
+  a{
+    @include afterBar(5px, -0.2em);
+  }
+}
+
+.header__row {
+  margin-bottom: 15px;
+}

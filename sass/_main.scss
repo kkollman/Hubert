@@ -3,18 +3,21 @@ body {
 }
 
 
-div.container {
-    width: 66.67%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+// div.container {
+//     width: 66.67%;
+//     max-width: 1200px;
+//     margin: 0 auto;
+// }
 
 div.main {
-  column-count: 2;
-  -webkit-column-count: 2;
-  column-gap: 3px;
-  -webkit-column-gap: 3px;
-  -webkit-column-rule: $mainBorder;
-  -moz-column-rule: $mainBorder;
-  column-rule: $mainBorder;
+
+  @media (min-width: 768px) {
+    column-count: 2;
+    -webkit-column-count: 2;
+    column-gap: 3px;
+    -webkit-column-gap: 3px;
+    -webkit-column-rule: $mainBorder;
+    -moz-column-rule: $mainBorder;
+    column-rule: $mainBorder;
+  }
 }

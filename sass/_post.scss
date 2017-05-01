@@ -1,16 +1,30 @@
+$paddingHorizontal: 25px;
+$paddingVertical: 25px;
 
 .main__post {
+    &:not(:first-child){
+      padding-top: 1.5*($paddingVertical);
+    }
+    padding-bottom: 2*($paddingVertical);
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
-    padding: 5px;
-    // background-color: rgb(235, 235, 235);
     border-bottom: $mainBorder;
     &:last-of-type {
       border-bottom: none;
     }
 }
 
+.main__post-category {
+  margin-left: $paddingHorizontal;
+  margin-bottom: 0.25*$paddingVertical
+}
+
+.main__post-title {
+  margin-left: $paddingHorizontal;
+  margin-top: 0;
+}
+
 .main__post-content {
-    padding: 10px;
+  margin: $paddingVertical $paddingHorizontal;
 }
