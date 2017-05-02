@@ -2,8 +2,10 @@ $paddingHorizontal: 25px;
 $paddingVertical: 25px;
 
 .main__post {
-    &:not(:first-child){
-      padding-top: 1.5*($paddingVertical);
+    transition: 0.2s;
+    padding-top: 1.5*($paddingVertical);
+    &:first-child {
+      padding-top: $paddingVertical;
     }
     padding-bottom: 2*($paddingVertical);
     padding-left: $paddingHorizontal;
@@ -14,6 +16,10 @@ $paddingVertical: 25px;
     border-bottom: $mainBorder;
     &:last-of-type {
       border-bottom: none;
+    }
+    &:hover{
+      background-color: $background2;
+      @include shadow;
     }
 }
 

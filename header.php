@@ -53,7 +53,6 @@
           </nav>
         </div>
       </div>
-
       <!-- end of navigation -->
     </header>
     <!-- site header end -->
