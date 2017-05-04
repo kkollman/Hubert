@@ -24,6 +24,7 @@ function hilscherSetup(){
     'footer' => __('Footer Menu'),
   ));
 
+
   // Add featured image support
   add_theme_support('post-thumbnails');
   add_image_size('small-thumbnail', 570, 150, true);
@@ -33,6 +34,15 @@ function hilscherSetup(){
 
 add_action('after_setup_theme', 'hilscherSetup');
 
+//Register sidebar
+register_sidebar(array(
+  'name' => 'Home right sidebar',
+  'id' => 'home_right_1',
+  'before_widget' => '<div>',
+  'after_widget' => '</div>',
+  'before_title' => '<h2 class="rounded">',
+  'after_title' => '</h2>',
+  ));﻿
 
 
  ?>

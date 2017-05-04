@@ -2,29 +2,30 @@
 </div>
 
 <!-- start page footer -->
-<footer class="site-footer container">
-
-    <!-- show blog info -->
-    <nav class="row nav nav__menu nav__footer">
-      <div class="col-sm-4 footer__info">
-        <p>
+<footer class="site-footer ">
+  <div class="container">
+    <nav class="nav nav__menu nav__footer">
+      <div class="row">
+        <!-- show footer navigation -->
+        <div class="col-sm-12">
+          <?php
+          $menu_elements = array(
+            'theme_location' => 'footer',
+          );
+          wp_nav_menu($menu_elements);
+          ?>
+        </div>
+        <!-- show footer navigation -->
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-sm-4">
+        <p class="footer__info">
           <?php bloginfo('name'); ?> – &copy <?php echo date('Y');  ?>
         </p>
       </div>
-    <!-- end blog info -->
-    <!-- show footer navigation -->
-      <div class="col-sm-8">
-        <?php
-        $menu_elements = array(
-          'theme_location' => 'footer',
-        );
-        wp_nav_menu($menu_elements);
-        ?>
-      </div>
-      </nav>
-
-    <!-- show footer navigation -->
-
+    </div>
+  </div>
 </footer>
 <!-- end page footer -->
 

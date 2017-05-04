@@ -1,6 +1,4 @@
-$menuMargin: 50px;
-
-
+$menuMargin: 25px;
 
 .nav__menu {
   background-color: $accent1;
@@ -32,6 +30,10 @@ $menuMargin: 50px;
   margin-top: $menuMargin;
 }
 
+.nav-menu {
+
+}
+
 .menu-item, .page_item {
   padding: 5px;
   transition: 0.3s;
@@ -47,6 +49,11 @@ $menuMargin: 50px;
   }
 }
 
+footer .menu {
+  @media (min-width: 992px) {
+    float: left;
+  }
+}
 
 .menu-item a {
     color: inherit;
@@ -55,3 +62,9 @@ $menuMargin: 50px;
       color: inherit;
     }
   }
+
+
+.footer__info {
+  margin-top: 0.2*$menuMargin;
+  padding-left: 0.1*$menuMargin;
+}

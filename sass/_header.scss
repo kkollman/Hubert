@@ -1,10 +1,8 @@
 .header__heading{
   color: $dark;
+  margin: 0;
   :hover {
     color: inherit;
-  }
-  a{
-    @include afterBar(5px, -0.2em);
   }
 }
 
