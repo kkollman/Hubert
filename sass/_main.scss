@@ -2,6 +2,9 @@ body {
   background-color: $background1;
 }
 
+.container-fluid {
+  max-width: 1600px;
+}
 
 // div.container {
 //     width: 66.67%;
@@ -9,8 +12,7 @@ body {
 //     margin: 0 auto;
 // }
 
-div.main {
-
+.main {
   @media (min-width: 768px) {
     column-count: 2;
     -webkit-column-count: 2;

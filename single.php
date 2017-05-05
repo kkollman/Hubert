@@ -1,7 +1,9 @@
-<?php
+<?php get_header(); ?>
 
-get_header();
+<!-- open the main part for post -->
 
+<section class="single col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-2">
+  <?php
   if (have_posts()) :
     while (have_posts()) : the_post(); ?>
     <article class="page__post">
@@ -32,7 +34,8 @@ get_header();
   else :
     echo "<p>Post does not exist any more, or can't be read at the moment.</p>";
 
-  endif;
+  endif; ?>
+</section>
+<!-- end the main part for post -->
 
-  get_footer();
- ?>
+  <?php get_footer();  ?>

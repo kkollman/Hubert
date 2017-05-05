@@ -34,15 +34,32 @@ function hilscherSetup(){
 
 add_action('after_setup_theme', 'hilscherSetup');
 
-//Register sidebar
-register_sidebar(array(
-  'name' => 'Home right sidebar',
-  'id' => 'home_right_1',
-  'before_widget' => '<div>',
-  'after_widget' => '</div>',
-  'before_title' => '<h2 class="rounded">',
-  'after_title' => '</h2>',
-  ));﻿
+//Add widget for sidebar
+function hilscherWidgetsInit() {
+  //register left sidebar
+  register_sidebar(array(
+    'name' => 'Left sidebar',
+    'id' => 'sidebar_left'
+  ));
 
+  //register the left-most footer widget
+  register_sidebar(array(
+    'name' => 'Footer area 1',
+    'id' => 'sidebar_footer_1'
+  ));
 
+  //register the middle footer widget
+  register_sidebar(array(
+    'name' => 'Footer area 2',
+    'id' => 'sidebar_footer_2'
+  ));
+
+  //register the right-most footer widget
+  register_sidebar(array(
+    'name' => 'Footer area 3',
+    'id' => 'sidebar_footer_3'
+  ));
+
+}
+add_action('widgets_init', 'hilscherWidgetsInit');
  ?>

@@ -1,4 +1,4 @@
-$paddingHorizontal: 25px;
+$paddingHorizontal: 30px;
 $paddingVertical: 25px;
 
 .main__post {
@@ -32,6 +32,9 @@ $paddingVertical: 25px;
   margin-top: 0;
 }
 
+.main__post-content {
+  // margin: $paddingVertical $paddingHorizontal;
+}
 
 .main__post-thumbnail {
   margin-bottom: $paddingVertical;

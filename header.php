@@ -10,52 +10,49 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
+    <!--open main container for page -->
+    <div class="container-fluid">
 
-    <!-- site header -->
-    <header class="header container">
-      <div class="row">
-        <div class="col-sm-12">
-          <!-- header first row -->
-          <div class="row header__row header__row--first">
-            <div class="col-md-6">
-              <h1 class="header__heading">
-                <a href="<?php echo home_url(); ?>">
-                  <?php bloginfo('name'); ?>
-                </a>
-              </h1>
+      <!-- site header -->
+      <header class="header">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-2">
+            <div class="row header__row header__row--first">
+              <div class="col-md-6">
+                <h1 class="header__heading">
+                  <a href="<?php echo home_url(); ?>">
+                    <?php bloginfo('name'); ?>
+                  </a>
+                </h1>
+              </div>
             </div>
+
           </div>
-          <!-- end of first row -->
-
         </div>
-      </div>
-      <!-- site navigation -->
-      <div class="row">
-        <div class="col-sm-12">
-          <nav class="nav nav__menu nav__header">
-            <!-- display blog info -->
-            <div class="col-md-6 header__motto">
-              <h5>
-                <?php bloginfo('description'); ?>
-              </h5>
-            </div>
-            <!-- end of blog info -->
-            <!-- display blog menu -->
-            <div class="col-md-6">
-              <?php
-              $menu_elements = array(
-                'theme_location' => 'primary',
-              );
-              wp_nav_menu($menu_elements);
-              ?>
-            </div>
-            <!-- end of blog menu -->
-          </nav>
+        <!-- site navigation -->
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-2">
+            <nav class="nav nav__menu nav__header">
+              <!-- display blog info -->
+              <div class="col-md-6 header__motto">
+                <h5>
+                  <?php bloginfo('description'); ?>
+                </h5>
+              </div>
+              <!-- end of blog info -->
+              <!-- display blog menu -->
+              <div class="col-md-6">
+                <?php
+                $menu_elements = array(
+                  'theme_location' => 'primary',
+                );
+                wp_nav_menu($menu_elements);
+                ?>
+              </div>
+              <!-- end of blog menu -->
+            </nav>
+          </div>
         </div>
-      </div>
-      <!-- end of navigation -->
-    </header>
-    <!-- site header end -->
-
-    <!-- open container for main page -->
-    <div class="container">
+        <!-- end of navigation -->
+      </header>
+      <!-- site header end -->

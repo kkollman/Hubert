@@ -55,11 +55,15 @@ footer .menu {
   }
 }
 
-.menu-item a {
+.menu-item a, .page_item a {
     color: inherit;
     &:hover {
       text-decoration: none;
       color: inherit;
+    }
+    &:active {
+      color: inherit;
+
     }
   }
 

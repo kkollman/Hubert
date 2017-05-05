@@ -2,9 +2,13 @@
 
 get_header();
 ?>
-
+<!-- sidebar start -->
+<section class="sidebar sidebar-left col-md-2">
+  <?php dynamic_sidebar('sidebar_left'); ?>
+</section>
+<!-- sidebar end -->
 <!-- start of main post list -->
-<div class="main">
+<section class="main col-lg-8 col-md-10">
   <?php
     if (have_posts()) :
       while (have_posts()) : the_post(); ?>
@@ -32,12 +36,9 @@ get_header();
 
     endif;
     ?>
-</div>
+</section>
 <!-- end of main post list -->
 
-<div class="main_sidebar sidebar">
-  Some sidebar
-</div>
 
 <?php
   get_footer();
