@@ -22,6 +22,7 @@ function hilscherSetup(){
   register_nav_menus(array(
     'primary' => __('Primary Menu'),
     'footer' => __('Footer Menu'),
+    'cover' => __('Cover Menu'),
   ));
 
 

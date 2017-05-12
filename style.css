@@ -92,6 +92,29 @@ h2.page__post-title {
 .page__post-category li {
   font-size: 1.5rem; }
 
+.cover__cover-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 6rem; }
+  @media (max-width: 768px) {
+    .cover__cover-title {
+      text-shadow: 1px 1px 3px rgba(89, 89, 89, 0.8);
+      font-size: 4rem;
+      color: white; } }
+
+.cover__cover-subtitle p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2em; }
+  @media (max-width: 768px) {
+    .cover__cover-subtitle p {
+      text-shadow: 1px 1px 3px rgba(150, 150, 150, 0.8);
+      color: white;
+      font-size: 1.5rem; } }
+
+@media (max-width: 768px) {
+  .cover__menu {
+    color: white; } }
+
 /*font family, font size, color, weight, transform and decoration*/
 img {
   max-width: 100%;
@@ -159,11 +182,31 @@ img {
   margin-top: 5px;
   padding-left: 2.5px; }
 
+@media (max-width: 768px) {
+  .cover__menu {
+    border-top: 2px solid white;
+    width: 80%; } }
+.cover__menu .menu {
+  float: none; }
+.cover__menu ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0; }
+  .cover__menu ul li {
+    display: flex; }
+    .cover__menu ul li:not(:first-child) {
+      margin-left: 15px; }
+    .cover__menu ul li.current-menu-item {
+      color: #ffffff;
+      background-color: #000000; }
+
 /*styles for menu navigation*/
 body {
   background-color: #f2f1ef; }
 
-.container-fluid {
+.container {
   max-width: 1600px; }
 
 @media (min-width: 768px) {
@@ -240,6 +283,53 @@ footer {
       float: left; }
 
 /*styles for single page*/
+.cover__cover-picture {
+  padding: 0;
+  height: 100vh; }
+
+.cover__cover-picture {
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.cover__color-layer {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  background-image: url("pictures/dotted_texture.png");
+  background-repeat: repeat; }
+  @media (min-width: 768px) {
+    .cover__color-layer {
+      background-image: none;
+      background-color: rgba(247, 202, 24, 0.4); }
+      .cover__color-layer:hover {
+        opacity: 0; } }
+
+.cover__cover-text {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 0;
+  align-items: center; }
+  @media (max-width: 767px) {
+    .cover__cover-text {
+      height: 30vh;
+      margin-top: -50vh; } }
+  @media (min-width: 768px) {
+    .cover__cover-text {
+      height: 100vh; } }
+
+.cover__text-wrapper {
+  margin: 0;
+  width: 100%; }
+
+@media (min-width: 768px) {
+  .cover__cover-subtitle {
+    background-color: #F7CA18;
+    width: 100%;
+    padding-left: 1em; } }
+
+/*styles for cover page*/
 .error-404 {
   margin: 0 auto;
   display: flex;
