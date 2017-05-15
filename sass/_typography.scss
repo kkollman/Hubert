@@ -98,14 +98,20 @@ h2.page__post-title {
         font-size: inherit;
         font-size: 1.8rem;
         line-height: 1.8em;
-
-        &:first-child:first-letter {
-            float: left;
-            font-size: 3.6em;
-            padding-top: 11px;
-            padding-right: 5px;
-        }
     }
+    blockquote {
+      font-style: italic;
+    }
+    strong {
+      font-size: inherit;
+    }
+}
+
+.page__post-content>p:first-child:first-letter {
+    float: left;
+    font-size: 3.6em;
+    padding-top: 11px;
+    padding-right: 5px;
 }
 
 .page__post-category {

@@ -83,11 +83,16 @@ h2.page__post-title {
   font-size: inherit;
   font-size: 1.8rem;
   line-height: 1.8em; }
-  .page__post-content p:first-child:first-letter {
-    float: left;
-    font-size: 3.6em;
-    padding-top: 11px;
-    padding-right: 5px; }
+.page__post-content blockquote {
+  font-style: italic; }
+.page__post-content strong {
+  font-size: inherit; }
+
+.page__post-content > p:first-child:first-letter {
+  float: left;
+  font-size: 3.6em;
+  padding-top: 11px;
+  padding-right: 5px; }
 
 .page__post-category li {
   font-size: 1.5rem; }
@@ -122,6 +127,9 @@ img {
 
 /*general styles for images*/
 /*predefined borders*/
+header {
+  margin-top: 3rem; }
+
 .header__heading {
   color: #000000;
   margin: 0; }
@@ -260,7 +268,7 @@ footer {
 .page__post-title {
   display: inline;
   position: relative;
-  margin: 20px 0; }
+  margin-top: 3rem; }
   .page__post-title::after {
     content: "";
     background-color: black;
@@ -271,16 +279,39 @@ footer {
     bottom: -0.1em; }
 
 .page__post-content {
-  margin-top: 3rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
+  margin-top: 5rem; }
   .page__post-content img {
     display: block;
-    margin: 25px;
     max-width: 92%; }
     .page__post-content img.alignleft {
-      float: left; }
+      float: left;
+      margin-top: 2rem;
+      margin-right: 2rem;
+      margin-bottom: 2rem;
+      margin-left: 0; }
+    .page__post-content img.alignnone, .page__post-content img.aligncenter {
+      margin: 25px auto; }
+    .page__post-content img.alignleft {
+      float: right;
+      margin-top: 2rem;
+      margin-left: 2rem;
+      margin-bottom: 2rem;
+      margin-right: 0; }
+  .page__post-content blockquote {
+    margin: 15px auto;
+    max-width: 80%;
+    padding: 10px;
+    background-color: rgba(248, 228, 158, 0.8);
+    border-left-color: #F7CA18;
+    position: relative; }
+    .page__post-content blockquote:before {
+      content: "\f10e";
+      font-family: FontAwesome;
+      position: absolute;
+      left: -45px;
+      bottom: 0;
+      font-size: 3rem;
+      color: lightgray; }
 
 /*styles for single page*/
 .cover__cover-picture {

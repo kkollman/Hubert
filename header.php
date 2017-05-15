@@ -6,6 +6,7 @@
     <title><?php bloginfo('name'); ?></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500|Roboto:400,700,900&amp;subset=latin-ext" rel="stylesheet">
+    <script src="https://use.fontawesome.com/df5e2d6376.js"></script>
     <link rel="stylesheet" href="style.css">
     <?php wp_head(); ?>
   </head>

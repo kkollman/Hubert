@@ -1,36 +1,41 @@
-<?php
+<?php get_header(); ?>
 
-get_header();
-?>
+<!-- open the main part for post -->
 
-<div class="main">
+<section class="single col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-2">
   <?php
-    if (have_posts()) :
-      while (have_posts()) : the_post(); ?>
-      <article class="main__post">
-          <?php the_post_thumbnail('page-banner'); ?>
-        <div class=main__post-category>
-          <?php the_category() ?>
+  if (have_posts()) :
+    while (have_posts()) : the_post(); ?>
+    <article class="page__post">
+      <div class="page__post-info">
+        <!-- display the date of creation and the author name -->
+        <!-- Dodano <?php the_time('d/m/y'); ?> przez <a href="<php? get_author_posts_url(get_author_meta('ID'));" ?> <?php the_author(); ?> </a> -->
+        <div class="page__post-category post-category">
+          <?php the_category(); ?>
         </div>
-        <h2 class="main__post-title">
-          <a href="<?php the_permalink(); ?>">
+      </div>
+      <?php the_post_thumbnail('page-banner'); ?>
+      <section class="page__post-text post-text">
+        <div class="row page__post-title-row">
+          <h2 class="page__post-title post-title">
             <?php the_title(); ?>
-          </a>
-        </h2>
-        <div class="main__post-content">
-            <?php the_excerpt(); ?>
+          </h2>
         </div>
-      </article>
+        <div class="row">
+          <div class="page__post-content post-content col-sm-8 col-sm-offset-2">
+              <?php the_content(); ?>
+          </div>
+        </div>
+      </section>
+    </article>
 
-    <?php endwhile;
+  <?php endwhile;
 
-    else :
-      echo "<p class\"error page__error\">Post doesn't exist or was removed</p>";
+  else :
+    echo "<p>Post does not exist any more, or can't be read at the moment.</p>";
 
-    endif;
-    ?>
-</div>
+  endif; ?>
+</section>
+<!-- end the main part for post -->
 
-<?php
-  get_footer();
- ?>
+  <?php get_footer();  ?>
