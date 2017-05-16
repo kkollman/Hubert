@@ -6,6 +6,9 @@
 .cover__cover-picture {
     background-size: cover;
     background-repeat: no-repeat;
+    @media (max-width: 768px) {
+      filter: blur(2px);
+    }
 }
 
 .cover__color-layer {
