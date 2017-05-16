@@ -91,6 +91,9 @@ h2.page__post-title {
     font-size: 5rem;
     text-transform: uppercase;
     color: $dark;
+    @media (max-width: 768px) {
+      font-size: 3rem;
+    }
 }
 
 .page__post-content {
@@ -98,6 +101,9 @@ h2.page__post-title {
         font-size: inherit;
         font-size: 1.8rem;
         line-height: 1.8em;
+        @media (max-width: 768px) {
+          font-size: 1.4rem;
+        }
     }
     blockquote {
       font-style: italic;

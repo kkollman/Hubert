@@ -78,11 +78,17 @@ h2.page__post-title {
   font-size: 5rem;
   text-transform: uppercase;
   color: #000000; }
+  @media (max-width: 768px) {
+    h2.page__post-title {
+      font-size: 3rem; } }
 
 .page__post-content p {
   font-size: inherit;
   font-size: 1.8rem;
   line-height: 1.8em; }
+  @media (max-width: 768px) {
+    .page__post-content p {
+      font-size: 1.4rem; } }
 .page__post-content blockquote {
   font-style: italic; }
 .page__post-content strong {
